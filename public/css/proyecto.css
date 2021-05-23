@@ -1,0 +1,86 @@
+#proyecto-individual {
+	font-family: 'Lato', sans-serif;
+	color: #555;
+	font-size: 18px
+}
+
+body #proyecto-individual a, body #proyecto-individual p, body #proyecto-individual li, body #proyecto-individual strong {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px
+}
+
+#proyecto-individual ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#proyecto-individual .col-sm-8 hr {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+body #proyecto-individual a {
+    color: #e96656;
+}
+
+body #proyecto-individual a:hover {
+	text-decoration: underline !important;
+	color: #e30613
+}
+
+.id {
+	margin-top: 30px
+}
+
+#proyecto-individual .proyecto {
+	padding-bottom: 15px;
+    margin: 40px 0 0;
+    border-bottom: 1px solid #eee;
+    color: #e96656;
+    font-family: 'Lato', sans-serif;
+}
+
+.autores {
+	padding-right: 15px
+}
+
+.resumen {
+	text-align: justify
+}
+
+.area p {
+	text-transform: lowercase;
+	display: inline-block;
+}
+.area p:first-letter {
+	text-transform: uppercase;
+}
+
+.estado p {
+	transition: .5s;
+	border-radius: 30px;
+	padding: 0 20px;
+	text-align: center;
+	text-transform: lowercase;
+	display: inline-block
+}
+.estado p:first-letter {
+	text-transform: uppercase;
+}
+.color-3:hover {
+	filter: saturate(200%)
+}
+
+.area, .estado {
+	margin: 0 0 15px;
+}
+
+.concepto::before, .informe_final::before, .cumplimiento::before {
+    content: "\f1c1";
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    margin-right: 3px;
+    color: #e96656
+}

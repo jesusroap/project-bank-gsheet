@@ -1,0 +1,84 @@
+#wpbody-content ul, #wpbody-content ol {
+    list-style: revert;
+    padding: revert
+}
+
+#header-admin {
+    display: none;
+}
+
+#menu-admin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc
+}
+
+#menu-admin ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px
+}
+
+#menu-admin ul li {
+    float: left;
+    border-bottom: none;
+    border-right: 1px solid #ccc;
+    height: 30px;
+    padding: 20px
+}
+
+#menu-admin ul li:last-child {
+    border-right: none
+}
+
+#menu-admin .lateral {
+    min-width: 200px;
+}
+
+.btn-group {
+    display: flex
+}
+
+#tabla_dt_wrapper {
+    max-width: 80%;
+    margin: auto
+}
+
+.pb-info {
+    display: inline-block;
+    line-height: 1.4;
+    padding: 11px 15px;
+    font-size: 14px;
+    margin: 10px 20px 30px 2px;
+    border-left-color: #ffb900 !important;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-left-width: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.pb-info ul li {
+    padding-bottom: 15px
+}
+
+.pb-info ul li ul li {
+    padding-bottom: 0
+}
+
+.pb-info ul li:last-child {
+    padding-bottom: 0
+}
+
+.pb-info ul li ul li:first-child {
+    padding-top: 8px
+}
+
+.pb-info input {
+    max-width: 90px;
+}
+
+.copy {
+    padding-left: 10px;
+    color: #016087
+}
