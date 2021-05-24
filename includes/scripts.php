@@ -1,7 +1,6 @@
 <?php
-/* Registro de scripts */
-
 function js_css_register() {
+	// Registro de Scripts
 	wp_register_script('datatables-js', esc_url(plugins_url('includes/DataTables/datatables.js', __DIR__)));
 	wp_register_script('searchpanes-datatables-js', esc_url(plugins_url('includes/DataTables/dataTables.searchPanes.min.js', __DIR__)));
 	wp_register_script('select-datatables-js', esc_url(plugins_url('includes/DataTables/dataTables.select.min.js', __DIR__)));
@@ -9,6 +8,7 @@ function js_css_register() {
 	wp_register_script('banco-proyectos-js', esc_url(plugins_url('public/js/banco-proyectos.js', __DIR__)));
 	wp_register_script('proyecto-js', esc_url(plugins_url('public/js/proyecto.js', __DIR__)));
 
+	// Registro de Estilos
 	wp_register_style('banco-proyectos-css', esc_url(plugins_url('public/css/banco-proyectos.css', __DIR__)));
 	wp_register_style('proyecto-css', esc_url(plugins_url('public/css/proyecto.css', __DIR__)));
 	wp_register_style('datatables-pb-css', esc_url(plugins_url('includes/DataTables/datatables.css', __DIR__)));
@@ -23,6 +23,7 @@ function js_css_register() {
 add_action('init', 'js_css_register');
 
 function my_shortcode_styles() {
+	// Activacion de Estilos
     global $post;
 
     if ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'project_bank' ) ) {

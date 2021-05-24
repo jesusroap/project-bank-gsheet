@@ -14,8 +14,6 @@ define('BP_RUTA', plugin_dir_path(__FILE__));
 
 define('BP_NOMBRE', 'Project Bank');
 
-define('BP_TABLE', 'project');
-
 include(BP_RUTA . 'includes/functions.php');
 
 include(BP_RUTA . 'includes/options.php');
