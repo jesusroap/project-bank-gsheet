@@ -53,7 +53,7 @@ jQuery(document).ready(function() {
                         <div class='nombre-proyecto'><a href='proyecto?codigo=${item.codigo}' target='_blank'>${item.proyecto}</a></div>
                         <div class='autores'><strong>Autores: </strong>${item.autor_1}, ${item.autor_2}, ${item.autor_3}, ${item.autor_4}, ${item.autor_5}, ${item.autor_6}, ${item.autor_7}, ${item.autor_8}, ${item.autor_9}, ${item.autor_10}</div>
                         <div class='estado-responsive'><span class='color-3'>${item.estado}</span></div>
-                        <div class='ver_mas'><a href='proyecto/codigo/${item.codigo}/' target='_blank'>Ver más</a></div>
+                        <div class='ver_mas'><a href='proyecto?codigo=${item.codigo}' target='_blank'>Ver más</a></div>
                     </td>
                     <td class='modalidad-oculto'>${item.modalidad}</td>
                     <td class='area-oculto'>${item.area}</td>
