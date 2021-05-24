@@ -113,4 +113,4 @@ setTimeout(function() {
                 jQuery(".color-3").css({"background-color": "#EFEBE9"});
                 jQuery(".certificado").css({"display": "none"});
             } 
-}, 1000);
+}, 2000);
