@@ -87,7 +87,7 @@ jQuery(document).ready(function() {
 
     }
 
-    getCSVFByDocId('1fORnuGVEasduQJ6pMR1_W6Z3zz0Ho4ypvtN0yxdtpg0', 'PaginaWeb!A:Z').then(procesaDatosAJSON);
+    getCSVFByDocId('1HsF7qvYq30TyWISZYdtx5Ka-L8XqRjcWddhBIHBTOOI', 'PaginaWeb!A:Z').then(procesaDatosAJSON);
 
 });
 
@@ -113,4 +113,4 @@ setTimeout(function() {
                 jQuery(".color-3").css({"background-color": "#EFEBE9"});
                 jQuery(".certificado").css({"display": "none"});
             } 
-}, 700);
+}, 1000);
