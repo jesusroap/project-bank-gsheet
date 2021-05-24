@@ -1,4 +1,10 @@
 <?php
+function add_query_codigo() {
+    global $wp;
+    $wp->add_query_var('codigo');
+}
+add_action( 'init', 'add_query_codigo' );
+
 function filter_project_title_content( $titulo ) {
 	$codigo = get_query_var('codigo');
 	if ( is_page('Proyecto codigo') ) {

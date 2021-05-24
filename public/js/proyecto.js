@@ -43,8 +43,15 @@ jQuery(document).ready(function() {
         // Pintamos en el DOM los detalles de cada proyecto segun su codigo
         let res = document.querySelector('#proyecto-individual');
 
-        let paths = window.location.pathname.split('/');
-        let codigo = paths[paths.length-2];      
+        // Toma el ultimo valor de la URL
+        // let paths = window.location.pathname.split('/');
+        // let codigo = paths[paths.length-2];
+        
+        // Toma el parametro de busqueda 'codigo' de la URL 
+        let params = new URLSearchParams(location.search);
+        let codigo = params.get('codigo');
+
+        console.log(codigo);
         
         for (let i = 0; i < numFilas; i++) {
 
