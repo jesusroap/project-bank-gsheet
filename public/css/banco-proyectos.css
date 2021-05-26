@@ -308,16 +308,16 @@
     top: 0px;
     left: 0px;
 	position: fixed;
-	z-index: 10000;
+	z-index: 100000;
 }
 
 #carga {
 	border: 13px solid #ccc;
 	border-top-color: #e30613;
 	border-top-style: groove;
-	height: 50px;
-	width: 50px;
-	border-radius: 50px;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -325,6 +325,29 @@
 	margin: auto;
 	position: absolute;
 	animation: girar 1.5s linear infinite;
+}
+
+.contenedor-logo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%
+}
+
+.contenedor-logo > img {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-width: 150%;
 }
 
 @keyframes girar {
