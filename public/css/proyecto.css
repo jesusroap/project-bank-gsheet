@@ -84,3 +84,35 @@ body #proyecto-individual a:hover {
     margin-right: 3px;
     color: #e96656
 }
+
+/****** Animacion Carga de Pagina ********/
+#contenedor_carga {
+    background: white;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+	position: fixed;
+	z-index: 10000;
+}
+
+#carga {
+	border: 13px solid #ccc;
+	border-top-color: #e30613;
+	border-top-style: groove;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+	from { transform: rotate(0deg)}
+	to { transform: rotate(360deg)}
+}
