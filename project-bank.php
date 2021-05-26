@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Project Bank Gsheet
-Plugin URI: https://github.com/JesusRoaP/project_bank
+Plugin URI: https://github.com/jesusroap/project-bank-gsheet
 Description: Muestra el banco de proyectos institucional.
 Author: Jesus Mauricio Roa Polania
 Version: 1.0
-Author URI: https://github.com/JesusRoaP
+Author URI: https://github.com/jesusroap
 */
 
 defined('ABSPATH') or die("Acceso Denegado");
