@@ -37,12 +37,12 @@ function procesaDatosAJSON(infoJson){
     let res = document.querySelector('#proyecto-individual');
 
     // Toma el ultimo valor de la URL
-    // let paths = window.location.pathname.split('/');
-    // let codigo = paths[paths.length-2];
+    let paths = window.location.pathname.split('/');
+    let codigo = paths[paths.length-2];
         
     // Toma el parametro de busqueda 'codigo' de la URL 
-    let params = new URLSearchParams(location.search);
-    let codigo = params.get('codigo');
+    //let params = new URLSearchParams(location.search);
+    //let codigo = params.get('codigo');
         
     for (let i = 0; i < numFilas; i++) {
         if (codigo === datos[i].codigo) {

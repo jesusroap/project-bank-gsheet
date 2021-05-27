@@ -1,10 +1,18 @@
 <?php
+// Creacion de Permalinks
+function rewrite_projects_permalinks() {
+    add_rewrite_rule( '(.?.+?)/codigo/([^/]*)/?$', 'index.php?pagename=$matches[1]&codigo=$matches[2]', 'top' );
+}
+add_action( 'init', 'rewrite_projects_permalinks' );
+
+// Creacion de parametro de consulta "codigo"
 function add_query_codigo() {
     global $wp;
     $wp->add_query_var('codigo');
 }
 add_action( 'init', 'add_query_codigo' );
 
+// Modificacion del titulo de la pagina "proyecto" por titulo unico de cada proyecto
 function filter_project_title_content( $titulo ) {
 	$codigo = get_query_var('codigo');
 	if ( is_page('Proyecto codigo') ) {
