@@ -103,34 +103,40 @@ jQuery(document).ready(function () {
       {
         targets: [0],
         className: "codigo",
+        title: "Código"
       },
       {
         targets: [1],
         className: "proyecto",
+        title: "Proyecto"
       },
       {
         targets: [2],
         visible: false,
         searchable: false,
         className: "modalidad-oculto",
+        title: "Modalidad"
       },
       {
         targets: [3],
         visible: false,
         searchable: false,
         className: "area-oculto",
+        title: "Área"
       },
       {
         targets: [4],
         visible: false,
         searchable: false,
         className: "estado-oculto",
+        title: "Estado"
       },
       {
         targets: [5],
         searchable: false,
         className: "estado",
         render: "",
+        title: "Estado"
       },
     ],
   });
