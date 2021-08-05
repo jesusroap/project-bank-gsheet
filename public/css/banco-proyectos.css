@@ -95,7 +95,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-#tabla_dt_wrapper #tabla_dt .proyecto {
+#tabla_dt_wrapper #tabla_dt td.proyecto {
     text-align: left;
 }
 
