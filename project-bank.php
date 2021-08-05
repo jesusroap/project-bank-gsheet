@@ -4,7 +4,7 @@ Plugin Name: Project Bank Gsheet
 Plugin URI: https://github.com/jesusroap/project-bank-gsheet
 Description: Muestra el banco de proyectos institucional.
 Author: Jesus Mauricio Roa Polania
-Version: 1.0
+Version: 2.0
 Author URI: https://github.com/jesusroap
 */
 
