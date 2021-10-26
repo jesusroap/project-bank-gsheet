@@ -1,4 +1,3 @@
-
 const claveAPI = 'AIzaSyBnk4I7IbLq1GV4wVuIypF6lAXijdVknSw';
     
 async function getCSVFByDocId(id, rango){
@@ -46,6 +45,39 @@ function procesaDatosAJSON(infoJson){
         
     for (let i = 0; i < numFilas; i++) {
         if (codigo === datos[i].codigo) {
+			var concepto_etico;
+            var informe_final;
+            var certificado_cumplimiento;
+
+			if (datos[i].concepto_etico == " " || datos[i].concepto_etico == "0" || datos[i].informe_final == " " || datos[i].informe_final == "0") {
+				concepto_etico = "";
+                informe_final = "";
+				certificado_cumplimiento = datos[i].certificado_cumplimiento;
+			} else if (datos[i].concepto_etico == " " || datos[i].concepto_etico == "0" || datos[i].certificado_cumplimiento == " " || datos[i].certificado_cumplimiento == "0") {
+				concepto_etico = "";
+                informe_final = datos[i].informe_final;
+				certificado_cumplimiento = "";
+			} else if (datos[i].informe_final == " " || datos[i].informe_final == "0" || datos[i].certificado_cumplimiento == " " || datos[i].certificado_cumplimiento == "0") {
+                concepto_etico = datos[i].concepto_etico;
+                informe_final = "";
+                certificado_cumplimiento = "";
+            } else if (datos[i].concepto_etico == " " || datos[i].concepto_etico == "0") {
+                concepto_etico = "";
+				informe_final = datos[i].informe_final;
+                certificado_cumplimiento = datos[i].certificado_cumplimiento;
+            } else if (datos[i].informe_final == " " || datos[i].informe_final == "0") {
+                concepto_etico = datos[i].concepto_etico;
+				informe_final = "";
+                certificado_cumplimiento = datos[i].certificado_cumplimiento;
+            } else if (datos[i].certificado_cumplimiento == " " || datos[i].certificado_cumplimiento == "0") {
+                concepto_etico = datos[i].concepto_etico;
+				informe_final = datos[i].informe_final;
+                certificado_cumplimiento = "";
+            } else {
+				concepto_etico = datos[i].concepto_etico;
+				informe_final = datos[i].informe_final;
+				certificado_cumplimiento = datos[i].certificado_cumplimiento;
+			}
             res.innerHTML = "";
             return res.innerHTML += `
                 <h3 class='proyecto'>${datos[i].proyecto}</h3>
@@ -59,13 +91,13 @@ function procesaDatosAJSON(infoJson){
                         <hr>
                         <ul class='certificado vc_row wpb_row vc_row-fluid row '>
                             <li class='concepto'>                        
-                                <a href='${datos[i].concepto_etico}' title='Concepto Comité de Ética' target='_blank'> Concepto Comité de Ética</a>
+                                <a href='${concepto_etico}' title='Concepto Comité de Ética' target='_blank'> Concepto Comité de Ética</a>
                             </li>
                             <li class='informe_final'>                          
-                                <a href='${datos[i].informe_final}' title='Informe Final' target='_blank'> Informe Final</a>
+                                <a href='${informe_final}' title='Informe Final' target='_blank'> Informe Final</a>
                             </li>
                             <li class='cumplimiento'>                          
-                                <a href='${datos[i].certificado_cumplimiento}' title='Certificado Cumplimiento' target='_blank'> Certificado de Cumplimiento</a>
+                                <a href='${certificado_cumplimiento}' title='Certificado Cumplimiento' target='_blank'> Certificado de Cumplimiento</a>
                             </li>
                         </ul>
                     </div>
